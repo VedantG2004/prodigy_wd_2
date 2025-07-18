@@ -1,0 +1,84 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(145deg, #328be4, #172be4);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    color: #8c2525;
+}
+
+/* Container Styling */
+.container {
+    text-align: center;
+    background: rgba(18, 122, 219, 0.492);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(149, 226, 15, 0.1);
+}
+
+/* Title */
+h1 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+/* Time Display */
+#display {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+/* Buttons */
+button {
+    font-size: 18px;
+    padding: 12px 24px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #3498db;
+    color: #fff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Custom styles for different buttons */
+#startBtn {
+    background-color: #2ecc71;
+}
+
+#stopBtn {
+    background-color: #e74c3c;
+}
+
+#resetBtn {
+    background-color: #9b59b6;
+}
+
+/* Glowing Text Animation */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #3498db, 0 0 30px #3498db;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #2ecc71, 0 0 40px #2ecc71;
+    }
+}
